@@ -1,6 +1,6 @@
 #include <stdio.h>
 // #include <conio.h>
-main()
+int main()
 {
     int a,b,sum;
     // clrscr();
