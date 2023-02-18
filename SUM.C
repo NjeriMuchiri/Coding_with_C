@@ -1,13 +1,13 @@
 #include <stdio.h>
-// #include <conio.h>
 int main()
 {
-    int a,b,sum;
-    // clrscr();
+    int n,a,b,sum;
     printf("Enter two numbers: ");
-    scanf("%d %d",&a,&b);
-sum = a+b;
-printf("sum=%d",sum);
-// getch();
- return(0);
+    scanf("%d",&n);
+    b = n%10; /*last digit*/
+    a=n/10; /*first digit*/
+    printf("\nFirst Digit= %d\nLast Digit= %d\n",a,b);
+    sum = a+b;
+    printf("\nSum is= %d",sum);
+    return 0;
 }
