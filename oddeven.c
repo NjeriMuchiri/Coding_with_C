@@ -16,5 +16,8 @@ int main()
    {
     printf("%d number you have entered is an odd number", num);
    }
+   /*ternary operator: */
+   /*(num % 2 == 0) ? printf("%d is even", num) : printf("%d is odd.", num)*/
 return 0;
 }
+
