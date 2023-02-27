@@ -23,13 +23,28 @@
  * 
  * Return: Always 0
 */
+// int main(void)
+// {
+//     char c;
+//     int n;
+
+//     printf("Address of variable 'c': %p\n", &c); //%p to print addresses i.e the values of pointers 
+//     printf("Address of variable 'n': %p\n", &n);
+//     return (0);
+// }
+
+// Pointers
+#include <stdio.h>
+
+/**
+ * main - printing the size, in bytes, of a pointer
+ * 
+ * Return: Always 0.
+*/
 int main(void)
 {
-    char c;
-    int n;
-
-    printf("Address of variable 'c': %p\n", &c); //%p to print addresses i.e the values of pointers 
-    printf("Address of variable 'n': %p\n", &n);
-    return (0);
+    int *p;
+    printf("Size of pointer: %lu\n", sizeof(p));
+    return(0);
 }
 
