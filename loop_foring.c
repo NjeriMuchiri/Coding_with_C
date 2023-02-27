@@ -44,7 +44,7 @@
 //     return (0);
 //  }
 // for loop
- #include <stdio.h>
+ /* #include <stdio.h>
 
  int main()
 {
@@ -54,7 +54,7 @@
         printf("%d * %d = %d\n",i,j, i*j);
   }
  return (0);
-}
+} */
 
 // do while loop
 // #include <stdio.h>
@@ -77,3 +77,4 @@
 //     while(i <= 5);
 //     return (0);
 // }
+
