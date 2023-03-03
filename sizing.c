@@ -8,14 +8,14 @@
 
 //limits.h header
 
-#include <stdio.h>
-#include <limits.h>
+// #include <stdio.h>
+// #include <limits.h>
 
-int main()
-{
-    int var1 = INT_MIN;
-    int var2 = INT_MAX;
+// int main()
+// {
+//     int var1 = INT_MIN;
+//     int var2 = INT_MAX;
 
-    printf("range of signed integer is from: %d to %d\n", var1, var2);
-    return 0;
-}
+//     printf("range of signed integer is from: %d to %d\n", var1, var2);
+//     return 0;
+// }
