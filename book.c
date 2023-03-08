@@ -46,17 +46,61 @@
 //         printf("Fact is %ld\n", fact);
 // }
 
-#include <stdio.h>
+// #include <stdio.h>
 
+// int main()
+// {
+//    int n, i,j;
+//    printf("Enter the number of Rows: ");
+//    scanf("%d",&n);
+//    for(i = 1; i <= n; i++)
+//    {
+//     for(j = 1; j <= i; j++)
+//     printf("%d", j);
+//     printf("\n");
+//    }
+// }
+
+// #include <stdio.h>
+
+// void print(int nb)
+// {
+//    if (nb < 0)
+//    {
+//       return;
+//    }
+//    printf("%d", nb);
+//    nb--;
+//    print(nb);
+// }
+
+// int main(void)
+// {
+//    print(4);
+//    return (0);
+// }
+
+#include <stdio.h>
 int main()
 {
-   int n, i,j;
-   printf("Enter the number of Rows: ");
-   scanf("%d",&n);
-   for(i = 1; i <= n; i++)
+   enum{false,true};
+   int prev, n, flag=true, i;
+   printf("Enter number 1: ");
+   scanf("%d", &n);
+
+   prev = n;
+   i = 2;
+
+   while(n != -1)
    {
-    for(j = 1; j <= i; j++)
-    printf("%d", j);
-    printf("\n");
+      printf("Enter number %d", i++);
+      scanf("%d", &n);
+      if (n < prev && n != -1)
+      flag = false;
+      prev = n;
    }
+if (flag == false)
+printf("Not in ascending order");
+else
+printf("In ascending order");
 }
