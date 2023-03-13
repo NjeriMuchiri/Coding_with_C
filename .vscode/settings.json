@@ -1,6 +1,7 @@
 {
     "files.associations": {
         "GOODBYEHARRY.C": "cpp",
-        "SUM.C": "cpp"
+        "SUM.C": "cpp",
+        "stdlib.h": "c"
     }
 }
