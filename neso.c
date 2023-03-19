@@ -40,9 +40,27 @@
 // printf("%.16f\n",var2 );
 // printf("%.21Lf\n",var3);
 // }
+// #include <stdio.h>
+// int main()
+// {
+//     printf("%d\n", printf("%s\n", "Hello World!"));
+//     printf("%s\n", "Hello");
+//     printf("%10s\n", "hello");
+//     return (0);
+// }
+// #include <stdio.h>
+// int main()
+// {
+//     char c = 255;
+//     c += 10;
+//     printf("%d", c);
+//     return 0;
+// }
 #include <stdio.h>
 int main()
 {
-    printf("%d\n", printf("%s\n", "Hello World!"));
-    return (0);
+    unsigned i = 1;
+    int j = -4;
+    printf("%u\n", i+j);
+    return 0;
 }
