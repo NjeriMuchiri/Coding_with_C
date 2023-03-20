@@ -56,11 +56,81 @@
 //     printf("%d", c);
 //     return 0;
 // }
+// #include <stdio.h>
+// #include <limits.h>
+// int main()
+// {
+//     unsigned i = 1;
+//     int j = -4;
+//     printf("%u\n", i+j);
+//     printf("%ld\n",sizeof(unsigned));
+//     return 0;
+// }
+// scope = lifetime of a variable where it is applicable or available
+// #include <stdio.h>
+
+// int main()
+// {
+//     int var = 34;
+// {
+//     int var = 23;
+//     printf("%d\n", var);
+// }
+// printf("%d\n", var);
+// return 0;
+// }
+
+// #include <stdio.h>
+// int fun();  //function prototype
+// int var = 10;
+// int main()
+// {
+//     int var = 3;
+//     printf("%d\n", var);
+//     fun();
+//     return 0;  
+// }
+// int fun()
+// {
+//     printf("%d\n",var);
+// }
+
+//automatic variables
+// #include <stdio.h>
+// int main()
+// {
+//     auto int var;
+//     printf("%d\n", var);
+//     return 0;
+// }
+
+//static modifiers
+// int count;
+// int increment() 
+// {
+//     count += 1;
+//     return count;
+// }
+// #include <stdio.h>
+// #include <stdlib.h>
+
+// int main()
+// {
+//     int value;
+//     value = increment();
+//     value = increment();
+//     value = increment();
+
+//     printf("%d\n", value);
+//     return 0;
+// }
+
+//date and time macros
 #include <stdio.h>
+
 int main()
 {
-    unsigned i = 1;
-    int j = -4;
-    printf("%u\n", i+j);
+    printf("The Date Today is: %s\n", __DATE__);
+    printf("Time is: %s\n", __TIME__);
     return 0;
 }
