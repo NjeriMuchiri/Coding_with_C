@@ -126,11 +126,12 @@
 // }
 
 //date and time macros
-#include <stdio.h>
+// #include <stdio.h>
 
-int main()
-{
-    printf("The Date Today is: %s\n", __DATE__);
-    printf("Time is: %s\n", __TIME__);
-    return 0;
-}
+// int main()
+// {
+//     printf("The Date Today is: %s\n", __DATE__);
+//     printf("Time is: %s\n", __TIME__);
+//     return 0;
+// }
+
