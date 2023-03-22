@@ -67,6 +67,6 @@ int main(void)
     printf("Email is: %s, let's connect\n", programming->email);
     printf("Am well-versed with the following: %s\n", programming->programminglanguages);
     printf("I have this much experience: %d\n", programming->age);
-       
+
     return (0);
 }
