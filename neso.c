@@ -135,3 +135,11 @@
 //     return 0;
 // }
 
+//Constants
+#include <stdio.h>
+
+int main()
+{
+    int var = 67;
+    printf("%d\n", var);
+}
