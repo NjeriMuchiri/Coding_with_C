@@ -136,10 +136,22 @@
 // }
 
 //Constants
+// #include <stdio.h>
+
+// int main()
+// {
+//     int var = 067;
+//     printf("%o\n", var);
+//     printf("%d\n", var);
+// }
+
 #include <stdio.h>
+
+#define STRING "%s\n"
+#define NESO "Welcome to Neso Academy!"
 
 int main()
 {
-    int var = 67;
-    printf("%d\n", var);
+    printf(STRING, NESO);
+    return 0;
 }
