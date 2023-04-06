@@ -40,5 +40,5 @@ struct node
 };
 int main()
 {
-    count_of_nodes(head);
+    count_of_nodes();
 }
