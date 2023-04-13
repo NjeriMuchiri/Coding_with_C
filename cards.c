@@ -45,6 +45,9 @@
 int main()
 {
     char card_name[3];
+    int count = 0;
+    while (card_name[0] != 'X')
+    {
     puts("Enter the card name: ");
     fgets(card_name, 3, stdin);
     int val = 0;
@@ -61,8 +64,27 @@ int main()
           val = 11;
         break;
 
+        case 'X':
+           continue;
+
         default:
         val = atoi(card_name);
+        if ((val < 1) || (val > 10))
+        {
+            puts("I dont understand that value");
+            continue;
+        }
     }
+        if ((val > 2) && (val < 7))
+        {
+            count++;
+        }
+        else if (val == 10)
+        {
+            count--;
+        }
+        printf("Current count: %i\n", count);
+    }
+    return 0;
 }
 
