@@ -8,7 +8,7 @@ int main()
     int get_output;
 
     printf("$ ");
-    out_put = (char *) malloc (nbytes + 1);
+    out_put = (char *) malloc (nbytes);
     get_output = getline(&out_put,&nbytes,stdin);
     if (get_output == -1)
     {
@@ -18,5 +18,6 @@ int main()
     {
      printf("%s",out_put);
     }
+    free(out_put);
     return(0);
 }
