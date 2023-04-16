@@ -18,6 +18,6 @@ int main()
     {
      printf("%s",out_put);
     }
-    free(out_put);
+    free(out_put); //deallocating memory
     return(0);
 }
