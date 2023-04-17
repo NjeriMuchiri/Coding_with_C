@@ -12,7 +12,7 @@ int main()
     get_output = getline(&out_put,&nbytes,stdin);
     if (get_output == -1)
     {
-        puts ("error");
+        printf ("error");
     }
     else
     {
