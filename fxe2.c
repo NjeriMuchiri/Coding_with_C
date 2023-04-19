@@ -4,9 +4,9 @@
 
 int main(int argc, char *argv[])
 {
-    printf("PID of fxe.c = %d\n", getpid());
+    printf("PID of fxe2.c = %d\n", getpid());
     char *args[] = {"Hello", "Neso", "Academy", NULL};
-    execv("./fxe3.c", args);
-    printf("Back to fxe.c");
+    execv("./fxe3", args);
+    printf("Back to fxe2.c\n");
     return (0);
 }
