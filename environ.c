@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <unistd.h>
 
-int main(){
 extern char **environ;
+int main(){
 
 int i;
 for(i = 0; environ[i]; i++)
