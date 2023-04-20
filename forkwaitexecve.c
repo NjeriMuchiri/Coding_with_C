@@ -15,18 +15,20 @@ int main(void)
    char *envp[] = {NULL};
 
    pid_t child_pid;
-   pid_t pid;
+   pid_t my_pid;
    int status;
 
-   pid = fork();
+//    ppid = fork();
    child_pid = fork();
    child_pid = fork();
 
-   if (pid == 0)
+   if (my_pid == 0)
    {
+    my_pid = getpid();
+    printf("Father is %u\n: ", my_pid);
     execve(argv[0], argv, NULL);
     perror("Error: " );
     exit(1);
    }
- while (wait(&status) !=pid);
+ while (wait(&status) != my_pid);
 }
