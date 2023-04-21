@@ -16,7 +16,7 @@ int main()
         printf("$ ");
         if (!fgets(buf, sizeof(buf), stdin)) break;
         printf(buf, argv);
-        execve(argv[0], argv, NULL);
+        // execve(argv[0], argv, NULL);
     }
 }
 int execute(char *cmd, char *argv[])
