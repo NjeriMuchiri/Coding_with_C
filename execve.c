@@ -17,6 +17,7 @@
 #include <string.h>
 #include <stdlib.h>
 #include <unistd.h>
+// you can provide your own env't variable 
 #include <errno.h>
 
 int main()
