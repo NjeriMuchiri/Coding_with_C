@@ -1,5 +1,5 @@
 #include <unistd.h>
-
+//giving the full path /bin/ls
 int main(void)
 {
     char *binaryPath = "/bin/ls";
